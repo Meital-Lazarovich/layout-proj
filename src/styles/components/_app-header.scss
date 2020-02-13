@@ -1,0 +1,44 @@
+.app-header {
+    background-color: $clr1;
+    height: 80px;
+    border-bottom: 1px solid $clr4;
+    .logo {
+        border: 1px solid $clr3;
+        width: 100px;
+        height: 50px;
+        margin-left: 50px;
+        cursor: pointer;
+    }
+    nav {
+        margin-right: 50px;
+        .menu-icon {
+            display: none;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            width: 400px;
+            li {
+                display: inline-block;
+                background-color: $clr2;
+                width: 70px;
+                height: 30px;
+                cursor: pointer;
+            }
+        }
+    }
+    @media screen and (max-width: 377px) {
+        border-bottom: none;
+        background-color: $clr2;
+        nav {
+            ul {
+                display: none;
+            }
+            .menu-icon {
+                display: block;
+                font-size: 26px;
+                color: $clr3;
+            }
+        }
+    }
+}

@@ -1,0 +1,10 @@
+aside {
+    background-color: $clr2;
+    .article-list {
+        height: 400px;
+        width: 300px;
+    }
+    @media screen and (max-width: 377px) {
+        display: none;
+    }
+}

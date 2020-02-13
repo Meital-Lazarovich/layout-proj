@@ -1,0 +1,85 @@
+.product-list {
+    .product-preview {
+        width: 680px;
+        height: 200px;
+        border: 1px solid #e2e2e2;
+        margin: 0 30px 35px 0;
+        flex-wrap: wrap;
+        position: relative;
+        figure {
+            position: relative;
+            margin: 0;
+            padding: 5px;
+            .exclusive {
+                position: absolute;
+                text-align: center;
+                width: 338px;
+                p {
+                    position: absolute;
+                    top: 0;
+                    color: rgba(255, 255, 255, 0.87);
+                    font-size: 12px;
+                    margin-top: 2px;
+                }
+            }
+        }
+        .title {
+            padding-left: 15px;
+            color: #339d48;
+            font-size: 12px;
+            height: 38px;
+            margin-top: 18px;
+            h2 {
+                margin-left: 16px;
+            }
+        }
+        .info-list {
+            list-style: none;
+            padding: 0;
+            margin-left: 16px;
+            margin-bottom: 10px;
+            li:before {
+                content: "✓";
+                color: #ff6a56;
+                margin-right: 9px;
+            }
+        }
+        .rev {
+            font-size: 14px;
+            color: #ff6a56;
+            background-color: white;
+            margin-bottom: 27px;
+            width: 165px;
+        }
+        .order {
+            width: 150px;
+            height: 40px;
+            border-radius: 3px;
+            background-image: linear-gradient(180deg, #ff8373 0%, #ff6a56 100%);
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+        }
+        @media screen and (max-width: 377px) {
+            width: 336px;
+            height: 311px;
+            flex-direction: column;
+            margin: 15px 0;
+            figure {
+                order: 1;
+                padding: 0;
+                .exclusive {
+                    display: none;
+                }
+                .img {
+                    width: 337px;
+                }
+            }
+            .title {
+                order: -1;
+            }
+        }
+    }
+}

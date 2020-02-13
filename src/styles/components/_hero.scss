@@ -1,0 +1,32 @@
+.hero {
+    background-color: $clr2;
+    height: 250px;
+    padding: 35px;
+    padding-left: 50px;
+    border-bottom: 1px solid $clr4;
+    h1 {
+        height: 60px;
+        width: 650px;
+        background-color: $clr1;
+        margin-bottom: 16px;
+    }
+    p {
+        height: 100px;
+        width: 600px;
+        background-color: $clr1;
+    }
+    @media screen and (max-width: 377px) {
+        height: 120px;
+        padding: 0;
+        h1 {
+            width: 257px;
+            height: 52px;
+            margin: 0 auto 40px;
+        }
+        p {
+            width: 124px;
+            height: 14px;
+            align-self: flex-end;
+        }
+    }
+}
