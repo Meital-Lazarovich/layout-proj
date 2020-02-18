@@ -5,6 +5,7 @@
 // BASICS
 @import 'basics/helpers';
 @import 'basics/base';
+@import 'basics/layout';
 
 // COMPONENTS
 @import 'components/app-header';
@@ -12,4 +13,3 @@
 @import 'components/page-filter';
 @import 'components/aside';
 @import 'components/product-list';
-@import 'components/content';

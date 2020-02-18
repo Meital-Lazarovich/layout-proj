@@ -1,6 +1,8 @@
 <template>
-    <section class="hero flex column align-center">
-        <h1></h1>
-        <p></p>
+    <section class="hero">
+        <div class="container flex-center column">
+            <h1></h1>
+            <p></p>
+        </div>
     </section>
 </template>

@@ -1,8 +1,45 @@
 aside {
-    background-color: $clr2;
     .article-list {
-        height: 400px;
-        width: 300px;
+        background-color: $clr2;
+        height: 409px;
+        width: 290px;
+        margin-bottom: 20px;
+        padding: 20px;
+
+        .list-header {
+            height: 25px;
+            width: 200px;
+            background-color: $clr3;
+        }
+
+        hr {
+            margin: 15px 0 20px;
+            border: 1px solid #aaaaaa;
+        }
+
+        article {
+            margin-bottom: 20px;
+            .article-img {
+                height: 90px;
+                width: 90px;
+                background-color: $clr1;
+            }
+            .article-header {
+                width: 150px;
+                height: 30px;
+                background-color: $clr3;
+            }
+            .article-link {
+                height: 15px;
+                width: 60px;
+                background-color: $clr3;
+            }
+        }
+    }
+    .promoted {
+        background-color: $clr2;
+        width: 290px;
+        height: 370px;
     }
     @media screen and (max-width: 377px) {
         display: none;

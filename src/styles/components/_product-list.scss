@@ -1,15 +1,19 @@
 .product-list {
     .product-preview {
-        width: 680px;
         height: 200px;
         border: 1px solid #e2e2e2;
-        margin: 0 30px 35px 0;
+        margin-bottom: 30px;
         flex-wrap: wrap;
         position: relative;
+        width: 680px;
+        padding: 5px;
         figure {
+            order: 0;
             position: relative;
             margin: 0;
-            padding: 5px;
+            width: 338px;
+            height: 190px;
+            margin-right: 15px;
             .exclusive {
                 position: absolute;
                 text-align: center;
@@ -22,34 +26,59 @@
                     margin-top: 2px;
                 }
             }
+            .play-img {
+                position: absolute;
+                top: 50%;
+                margin-top: -30px;
+                left: 50%;
+                margin-left: -30px;
+            }
         }
-        .title {
-            padding-left: 15px;
-            color: #339d48;
-            font-size: 12px;
+        .logo {
+            width: 140px;
             height: 38px;
-            margin-top: 18px;
-            h2 {
-                margin-left: 16px;
+            margin: 13px 100px 9px 0;
+            order: 1;
+        }
+        .score {
+            display: flex;
+            flex-direction: column;
+            color: #000000;
+            font-size: 11px;
+            line-height: 18px;
+            letter-spacing: 0.22px;
+            order: 10;
+            margin: 5px 16px 0 0;
+            .score-value {
+                font-size: 25px;
+                font-family: Monserrat-bold;
+                letter-spacing: 0.5px;
             }
         }
         .info-list {
             list-style: none;
             padding: 0;
-            margin-left: 16px;
-            margin-bottom: 10px;
-            li:before {
-                content: "✓";
-                color: #ff6a56;
-                margin-right: 9px;
+            font-size: 13px;
+            margin: 0;
+            order: 2;
+            li {
+                margin-bottom: 9px;
+                &:last-child {
+                    margin-bottom: 22px;
+                }
+                img {
+                    margin-right: 9px;
+                }
             }
         }
         .rev {
             font-size: 14px;
             color: #ff6a56;
             background-color: white;
-            margin-bottom: 27px;
-            width: 165px;
+            width: 92px;
+            order: 3;
+            padding: 0;
+            margin-left: 14px;
         }
         .order {
             width: 150px;
@@ -58,27 +87,68 @@
             background-image: linear-gradient(180deg, #ff8373 0%, #ff6a56 100%);
             color: white;
             font-size: 18px;
+            order: 11;
             position: absolute;
-            right: 20px;
             bottom: 15px;
+            right: 20px;
         }
         @media screen and (max-width: 377px) {
             width: 336px;
             height: 311px;
-            flex-direction: column;
+            flex-direction: row;
+            justify-content: space-between;
             margin: 15px 0;
-            figure {
+            padding: 0;
+            .logo {
+                order: 0;
+                margin: 11px 0 11px 13px;
+                width: 117px;
+                height: 32px;
+            }
+            .score {
                 order: 1;
-                padding: 0;
+                margin: 9px 13px 0 0;
+                line-height: 18px;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                .score-value {
+                    font-size: 15px;
+                    margin-left: 2px;
+                }
+            }
+            .rev {
+                position: absolute;
+                top: 29px;
+                right: 12px;
+            }
+            figure {
+                order: 2;
                 .exclusive {
                     display: none;
                 }
-                .img {
-                    width: 337px;
+                .product-img {
+                    width: 334px;
                 }
             }
-            .title {
-                order: -1;
+            .info-list {
+                height: 40px;
+                overflow: hidden;
+                order: 3;
+                margin: 11px 0 17px;
+                li {
+                    margin-bottom: 7px;
+                    img {
+                        margin: 0 7px 0 16px;
+                    }
+                }
+            }
+            .order {
+                font-size: 13px;
+                width: 88px;
+                height: 32px;
+                right: 13px; 
+                bottom: 19px;
             }
         }
     }

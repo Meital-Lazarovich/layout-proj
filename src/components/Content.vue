@@ -1,7 +1,9 @@
 <template>
-    <main class="content flex space-between">
-        <ProductList />
-        <Aside />
+    <main class="content">
+        <div class="container flex space-between">
+            <ProductList />
+            <Aside />
+        </div>
     </main>
 </template>
 
